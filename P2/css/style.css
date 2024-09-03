@@ -1,0 +1,20 @@
+h2 {
+    color: orange; /* Mengganti 'Dorange' dengan 'orange' */
+    font-family: 'Trebuchet MS';
+    text-align: center;
+}
+
+.kotak {
+    padding: 50px;
+    width: 100px;
+    color: #fff; /* Menambahkan warna teks putih */
+    margin: 10px;
+    background: orange; /* Mengganti 'O#fff' dengan 'orange' */
+}
+
+#kotak {
+    width: 400px;
+    color: #fff; /* Menambahkan warna teks putih */
+    background: blue; /* Mengganti 'background:' dengan 'orange' */
+    padding: 50px;
+}
