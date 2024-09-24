@@ -1,22 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Profil Dosen</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<?php
-$Dosen = [
-    'nama' => 'Elok Nur Hamdana',
-    'domisili' => 'Malang',
-    'Jenis Kelamin' => 'Perempuan'];
-echo "nama : {$Dosen ['nama']} <br>";
-echo "Domisili : {$Dosen ['domisili']} <br>";
-echo "Jenis Kelamin : {$Dosen ['Jenis Kelamin']} <br>";
 
-
-?>
+<table>
+    <thead>
+    <tr>
+        <th>Informasi</th>
+        <th>Detail</th>
+    </tr>
+    </thead>
+    <tbody>
+    <?php
+    $Dosen = [
+        'Nama' => 'Elok Nur Hamdana',
+        'Domisili' => 'Malang',
+        'Jenis Kelamin' => 'Perempuan'
+    ];
+    foreach ($Dosen as $info => $detail) {
+        echo "<tr>";
+        echo "<td>{$info}</td>";
+        echo "<td>{$detail}</td>";
+        echo "</tr>";
+    }
+    ?>
+    </tbody>
+</table>
 
 </body>
 </html>
