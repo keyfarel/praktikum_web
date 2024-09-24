@@ -1,7 +1,7 @@
 <?php
 $menu = [
     [
-        "nama"=> "Bercanda"
+        "nama"=> "Beranda"
     ],
     [
         "nama"=>"Berita",
@@ -10,18 +10,18 @@ $menu = [
                 "nama" =>"Wisata",
                 "subMenu"=>[
                     [
-                        "nama"=>"pantai"
+                        "nama"=>"Pantai"
                     ],
                     [
-                        "nama"=>"gunung"
+                        "nama"=>"Gunung"
                     ]
                 ]
             ],
             [
-                "nama"=>"kuliner"
+                "nama"=>"Kuliner"
             ],
             [
-                "nama"=>"hiburan"
+                "nama"=>"Hiburan"
             ]
         ]
     ],
@@ -29,7 +29,7 @@ $menu = [
         "nama"=>"Tentang"
     ],
     [
-        "nama" => "kontak"
+        "nama" => "Kontak"
     ],
 ];
 
@@ -37,7 +37,8 @@ function tampilMenuBertingkat(array $menu) {
     echo "<ul>";
     foreach ($menu as $key => $item) {
         echo "<li>{$item['nama']}";
-        if (isset($item['subMenu']) && is_array($item['subMenu'])) {
+        if (isset($item['subMenu'])
+            && is_array($item['subMenu'])) {
             tampilMenuBertingkat($item['subMenu']);
         }
         echo "</li>";

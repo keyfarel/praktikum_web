@@ -1,7 +1,7 @@
 <?php
 $menu = [
     [
-        "nama" => "Bercanda"
+        "nama" => "Beranda"
     ],
     [
         "nama" => "Berita",
@@ -29,7 +29,7 @@ $menu = [
         "nama" => "Tentang"
     ],
     [
-        "nama" => "kontak"
+        "nama" => "Kontak"
     ],
 ];
 

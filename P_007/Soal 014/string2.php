@@ -1,12 +1,12 @@
 <?php
 echo "Baris\nbaru <br>";
 echo 'Baris\nbaru <br>';
-echo "Halo\nDunia <br>";
-echo 'Halo\nDunia <br>';
+echo "Halo\rDunia <br>";
+echo 'Halo\rDunia <br>';
 
-echo "<pre>Halo\nDunia </pre>";
-echo '<pre>Halo\nDunia </pre>';
+echo "<pre>Halo\tDunia </pre>";
+echo '<pre>Halo\tDunia </pre>';
 
-echo "Katakanlah\nTidak ada narkoba";
+echo "Katakanlah\"Tidak pada narkoba\"<br>";
 echo "<br/>";
-echo 'Katakanlah\nTidak ada narkoba';
+echo 'Katakanlah\'Tidak pada narkoba\'<br>';

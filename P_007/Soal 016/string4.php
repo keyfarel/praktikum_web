@@ -9,7 +9,8 @@ echo "<pre>";
 print_r($pesanPerkata);
 echo "</pre><br>";
 
-$pesanPerkata = array_map(fn($pesan)=> strrev($pesan), $pesanPerkata);
+$pesanPerkata = array_map(fn($pesan)
+=> strrev($pesan), $pesanPerkata);
 
 echo "<pre>";
 print_r($pesanPerkata);

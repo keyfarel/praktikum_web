@@ -1,13 +1,22 @@
 <?php
-echo $_SERVER['PHP_SELF'];
+echo "Nama file saat ini: " . $_SERVER['PHP_SELF'];
 echo "<br>";
-echo $_SERVER['SERVER_NAME'];
+
+echo "Nama server: " . $_SERVER['SERVER_NAME'];
 echo "<br>";
-echo $_SERVER['SERVER_HOST'];
+
+echo "Host yang digunakan: " . $_SERVER['HTTP_HOST'];
 echo "<br>";
-echo $_SERVER['SERVER_REFERER'];
+
+if (isset($_SERVER['HTTP_REFERER'])) {
+    echo "Halaman pengarah (referer): "
+        . $_SERVER['HTTP_REFERER'];
+    echo "Halaman pengarah (referer): Tidak ada referer";
+}
 echo "<br>";
-echo $_SERVER['SERVER_USER_AGENT'];
+
+echo "User agent (browser): " . $_SERVER['HTTP_USER_AGENT'];
 echo "<br>";
-echo $_SERVER['SCRIPT_NAME'];
+
+echo "Nama skrip: " . $_SERVER['SCRIPT_NAME'];
 echo "<br>";
