@@ -22,6 +22,4 @@ if (isset($_FILES['file'])) {
     } else {
         echo implode("<br>", $errors);
     }
-
-
 }

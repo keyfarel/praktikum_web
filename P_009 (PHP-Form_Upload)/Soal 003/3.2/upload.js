@@ -15,7 +15,8 @@ $(document).ready(function() {
                 $('#status').html(response);
             },
             error: function() {
-                $('#status').html('Terjadi kesalahan saat mengunggah file.');
+                $('#status').html('Terjadi kesalahan saat ' +
+                    'mengunggah file.');
             }
         });
     });

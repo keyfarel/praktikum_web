@@ -6,8 +6,10 @@
     <title>Unggah Banyak Gambar</title>
 </head>
 <body>
-<form id="upload-form" action="upload_ajax.php" method="post" enctype="multipart/form-data">
-    <input type="file" name="file[]" id="file" multiple="multiple" accept="image/*"><br><br>
+<form id="upload-form" action="upload_ajax.php" method="post"
+      enctype="multipart/form-data">
+    <input type="file" name="file[]" id="file" multiple="multiple"
+           accept="image/*"><br><br>
     <input type="submit" name="submit" value="Unggah">
 </form>
 <div id="status"></div>

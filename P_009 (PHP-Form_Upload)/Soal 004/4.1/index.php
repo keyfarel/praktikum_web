@@ -9,12 +9,15 @@
 <body>
 <div class="upload-form-container">
     <h2>Unggah File Gambar</h2>
-    <form id="upload-form" action="upload_ajax.php" method="post" enctype="multipart/form-data">
+    <form id="upload-form" action="upload_ajax.php" method="post"
+          enctype="multipart/form-data">
         <div class="file-input-container">
-            <input type="file" name="file[]" id="file" class="file-input" multiple accept=".jpg, .jpeg, .png, .gif">
+            <input type="file" name="file[]" id="file" class="file-input"
+                   multiple accept=".jpg, .jpeg, .png, .gif">
             <label for="file" class="file-label">Pilih File Gambar</label>
         </div>
-        <button type="submit" name="submit" class="upload-button" id="upload-button" disabled>Unggah</button>
+        <button type="submit" name="submit" class="upload-button"
+                id="upload-button" disabled>Unggah</button>
     </form>
     <div id="status" class="upload-status"></div>
 </div>

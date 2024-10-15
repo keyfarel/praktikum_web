@@ -13,10 +13,12 @@ if (isset($_FILES['file'])) {
         $file_name = $_FILES['file']['name'][$i];
         $file_size = $_FILES['file']['size'][$i];
         $file_tmp = $_FILES['file']['tmp_name'][$i];
-        $file_ext = strtolower(pathinfo($file_name, PATHINFO_EXTENSION));
+        $file_ext = strtolower(pathinfo($file_name,
+            PATHINFO_EXTENSION));
 
         if (!in_array($file_ext, $allowed_extensions)) {
-            $errors[] = "Sorry, only JPG, JPEG, PNG, and GIF files are allowed: $file_name";
+            $errors[] = "Sorry, only JPG, JPEG, PNG, and GIF 
+            files are allowed: $file_name";
             continue;
         }
 
@@ -30,7 +32,8 @@ if (isset($_FILES['file'])) {
             if (move_uploaded_file($file_tmp, $target_file)) {
                 echo "File $file_name berhasil diunggah.<br>";
             } else {
-                $errors[] = "Terjadi kesalahan saat mengunggah file $file_name.";
+                $errors[] = "Terjadi kesalahan saat mengunggah file 
+                $file_name.";
             }
         }
     }

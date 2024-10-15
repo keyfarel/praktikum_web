@@ -13,15 +13,18 @@ if (isset($_FILES['file'])) {
         $file_name = $_FILES['file']['name'][$i];
         $file_size = $_FILES['file']['size'][$i];
         $file_tmp = $_FILES['file']['tmp_name'][$i];
-        $file_ext = strtolower(pathinfo($file_name, PATHINFO_EXTENSION));
+        $file_ext = strtolower(pathinfo($file_name,
+            PATHINFO_EXTENSION));
 
         if (!in_array($file_ext, $allowed_extensions)) {
-            $errors[] = "Sorry, only JPG, JPEG, PNG, and GIF files are allowed: $file_name";
+            $errors[] = "Sorry, only JPG, JPEG, PNG, and GIF
+             files are allowed: $file_name";
             continue;
         }
 
         if ($file_size > 2097152) {
-            $errors[] = "Sorry, the file $file_name is too large (max 2MB).";
+            $errors[] = "Sorry, the file $file_name is too large
+             (max 2MB).";
             continue;
         }
 
@@ -30,7 +33,8 @@ if (isset($_FILES['file'])) {
             if (move_uploaded_file($file_tmp, $target_file)) {
                 echo "File $file_name berhasil diunggah.<br>";
             } else {
-                echo "Terjadi kesalahan saat mengunggah file $file_name.<br>";
+                echo "Terjadi kesalahan saat mengunggah 
+                file $file_name.<br>";
             }
         }
     }
@@ -39,4 +43,3 @@ if (isset($_FILES['file'])) {
         echo implode("<br>", $errors);
     }
 }
-

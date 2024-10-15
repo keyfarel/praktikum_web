@@ -13,7 +13,8 @@ if (isset($_POST["submit"])) {
             $filename = $_FILES['files']['name'][$i];
             $target_file = $target_dir . $filename;
 
-            if (move_uploaded_file($_FILES['files']['tmp_name'][$i], $target_file)) {
+            if (move_uploaded_file($_FILES['files']['tmp_name'][$i],
+                $target_file)) {
                 echo "file $filename berhasil di upload <br>";
 
             } else {
