@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deteksi Angka Terbesar dan Terkecil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Form Deteksi Angka</h1>
+
+    <!-- Form untuk 5 Angka -->
+    <div class="form-section">
+        <input type="number" id="angka1" placeholder="Masukkan angka ke-1">
+        <input type="number" id="angka2" placeholder="Masukkan angka ke-2">
+        <input type="number" id="angka3" placeholder="Masukkan angka ke-3">
+        <input type="number" id="angka4" placeholder="Masukkan angka ke-4">
+        <input type="number" id="angka5" placeholder="Masukkan angka ke-5">
+        <button onclick="processNumbers()">Proses Angka</button>
+        <div id="result"></div>
+    </div>
+</div>
+
+<script src="files/script.js"></script>
+</body>
+</html>
