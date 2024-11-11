@@ -1,0 +1,204 @@
+/* Style umum */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f0fe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    width: 90%;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* Style untuk tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Style untuk tombol */
+.btn-tambah, .btn-kembali, .btn-hapus, button[type="submit"] {
+    background-color: #3f51b5;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.btn-tambah {
+    background-color: #4CAF50;
+}
+
+.btn-tambah:hover {
+    background-color: #45a049;
+}
+
+.btn-hapus, .btn-kembali {
+    background-color: #e74c3c;
+}
+
+.btn-hapus:hover, .btn-kembali:hover {
+    background-color: #c0392b;
+}
+
+button[type="submit"]:hover {
+    background-color: #354a9e;
+}
+
+/* Style untuk form */
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+form input[type="text"], form input[type="radio"] {
+    width: calc(100% - 30px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.radio-group {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px; /* Menambah jarak bagian bawah */
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: normal;
+    color: #333;
+}
+
+form input[type="radio"] {
+    width: auto; /* Mengatur ulang lebar input radio */
+    margin-right: 5px; /* Memberi jarak antara radio dan teks label */
+}
+
+/* Style untuk tautan dalam tabel */
+table a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table a:hover {
+    color: #e74c3c;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    form input[type="text"], form input[type="radio"] {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    button[type="submit"], .btn-tambah, .btn-kembali, .btn-hapus {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    table, th, td {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .btn-tambah, .btn-kembali, .btn-hapus {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    form input[type="text"], form input[type="radio"] {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    button[type="submit"], .btn-tambah, .btn-kembali, .btn-hapus {
+        font-size: 0.8rem;
+        padding: 8px 12px;
+    }
+}

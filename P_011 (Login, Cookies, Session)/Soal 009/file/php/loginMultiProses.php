@@ -18,7 +18,7 @@ if ($cek > 0) {
 <br>Silakan menuju <a href='../html/homeAdmin.html'>Halaman HOME</a>";
     } elseif ($row['level'] == 2) {
         echo "<br>Anda berhasil login.
-<br>Silakan menuju <a href='../html/homeSession.php'>Halaman HOME</a>";
+<br>Silakan menuju <a href='../html/homeSession.connection'>Halaman HOME</a>";
     } else {
         echo "<br>Level pengguna tidak diketahui.";
     }

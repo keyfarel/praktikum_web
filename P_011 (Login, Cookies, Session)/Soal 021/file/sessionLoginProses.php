@@ -17,7 +17,7 @@ if ($cek > 0) {
     $_SESSION['username'] = $username;
     $_SESSION['status'] = 'login';
     echo "<br>Anda Berhasil Login, silahkan menuju 
-          <br><a href='homeSession.php'>Halaman Home</a>";
+          <br><a href='homeSession.connection'>Halaman Home</a>";
 } else {
     echo "<br>Gagal login, silahkan login lagi 
           <br><a href='../index.html'>Halaman Login</a>";
